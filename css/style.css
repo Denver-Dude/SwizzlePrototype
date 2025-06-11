@@ -1,0 +1,28 @@
+.text-pink {
+  color: #e43fa1;
+}
+
+body {
+  font-family: 'Anek Latin', sans-serif;
+}
+
+
+h1{
+  font-family: "Anek Latin";
+  font-size: 80px;
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #e43fa1, #8364e8);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #d33091, #6f4be0);
+  box-shadow: 0 4px 12px rgba(227, 63, 161, 0.3);
+}
+
+.fs-5{
+  
+}
