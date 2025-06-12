@@ -137,46 +137,41 @@ h3 {
 /* Individual cards */
 .maxine-card img {
   width: 100%;
-  max-width: 500px;
+  max-width: 630px;
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
-
 .download-section {
   width: 100%;
-  background-color: #fff;
   padding: 60px 0;
+  background-image: url('https://via.placeholder.com/800') /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 400px;
 }
+
 
 .download-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* or center if needed */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 40px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 
-.download-image {
-  flex: 1 1 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.download-image img {
-  max-width: 100%;
-  height: auto;
-  max-height: 350px; /* or adjust as needed */
-  object-fit: contain;
-}
-
-
-.download-text {
+.download-text {/*
   flex: 1 1 500px;
   z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 10px;*/
 }
 
 .download-text h2 {
@@ -186,12 +181,65 @@ h3 {
 
 .download-text p {
   font-size: 16px;
-  color: #333;
+  color: #fff;
   margin-bottom: 25px;
 }
+
 
 .store-buttons img {
   height: 55px;
   margin-right: 15px;
 }
 
+h2{
+  color: white;
+}
+
+.partner-section {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background-color: #fff;
+}
+
+.partner-content h2 {
+  font-size: 3rem; /* Larger heading */
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.partner-content p {
+  font-size: 1.3rem; /* Larger paragraph */
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #000; /* Black button */
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact-button span {
+  margin-left: 10px;
+}
+
+.contact-button:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+
+.underline {
+  margin: 40px auto 0;
+  width: 1200px; /* Increased from 120px to 200px */
+  height: 4px;
+  background-color: #ff5ca2;
+  border-radius: 2px;
+}
