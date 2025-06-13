@@ -42,49 +42,97 @@ h3 {
   font-size: 30px;
 }
 
-/* Button hover effect for service tags */
-.btn-outline-dark:hover {
-  background-color: #000;
+.maxine-sections {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: row;
+  background: #eee;
+  border-radius: 20px;
+  padding: 40px;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.section-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.section-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.text {
+  flex: 1;
+}
+
+/* Gradient backgrounds + matching icon color */
+.purple {
+  background: linear-gradient(to right, #f0eaff, #e3dbf7);
+}
+
+.purple .icon-circle {
+  background: #c085ff;
   color: #fff;
 }
 
-.info-card {
-  border-radius: 20px;
-  padding: 2rem;
-  color: #222;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+.orange {
+  background: linear-gradient(to right, #fff1df, #fbe3c3);
 }
 
-.icon-box {
-  width: 40px;
-  height: 40px;
-  background: white;
-  color: #e43fa1;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  margin-bottom: 1rem;
+.orange .icon-circle {
+  background: #f5b35c;
+  color: #fff;
 }
 
-/* Gradient Backgrounds */
-.purple-gradient {
-  background: linear-gradient(135deg, #f4edff, #d9d6ff);
+.red {
+  background: linear-gradient(to right, #ffe5e6, #fbd2d3);
 }
 
-.peach-gradient {
-  background: linear-gradient(135deg, #fff3e9, #f6e5db);
+.red .icon-circle {
+  background: #fa697c;
+  color: #fff;
 }
 
-.pink-gradient {
-  background: linear-gradient(135deg, #ffeef1, #f5c9d2);
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .section-card {
+    flex-direction: column;
+    text-align: left;
+  }
 
+  .icon-circle {
+    margin-bottom: 10px;
+  }
+}
 /* Container setup */
 .maxine-section {
   position: relative;
