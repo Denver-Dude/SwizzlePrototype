@@ -425,7 +425,7 @@ font-size: 24px;
   /* margin: 0; */
 }
 .products-store{
-  background-image: url(../images/ourproducts.jpg);
+  background-image: url(images/ourproducts.jpg);
   height: 380px;
   background-repeat: no-repeat;
   display: flex;
