@@ -1,6 +1,10 @@
-.body{
-  background-image: url('Images/circlesbg.png');
+.background-circle {
+  background-image: url("Images/circlesbg.png");
+  background-repeat: no-repeat;
+  background-size: contain;         /* Or 'contain' depending on your design */
+  background-position: top;    /* Keeps the circles centered */
 }
+ 
 
 /* Button Gradient */
 .gradient-btn {
@@ -17,25 +21,34 @@
 /* Hero Section */
 .hero-wrapper {
   position: relative;
-  overflow-x: hidden;
-  background: #fff;
-  padding-top: 100px; /* Increased padding for top spacing */
-  padding-bottom: 60px; /* Add bottom spacing similar to Figma */
+
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 0;
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  width: 587px;
+  height: 539px;
+  background: url('Images/header bg.png') no-repeat center top;
+  background-size: cover;
+
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
 }
 
 
-/*
-.hero-wrapper .text-start {
-  position: relative;
-  z-index: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: left;
-}*/
 
 .hero-wrapper h4 {
   font-size: 90px;
@@ -47,6 +60,7 @@
 .hero-wrapper p {
   font-size: 40px;
   font-weight: 400;
+  z-index: 2;
   /* margin-top: 20px; */
   margin-bottom: 0;
 }
@@ -61,17 +75,9 @@
 /* Hero Section */
 .hero-wrapper {
   position: relative;
-  overflow-x: hidden;
-  background: #fff;
+
 }
 
-.hero-img img {
-  display: block;
-  width: 100%;
-  height: auto;More actions
-  margin: 0;
-  padding: 0;
-}
 
 h1 {
   margin-bottom: 0.5rem; 
@@ -118,13 +124,26 @@ footer.h6{
   height: 50px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   color: white;
   margin-bottom: 15px;
+  position: relative;
+}
+.icon-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px; /* 20px larger than the icon */
+  height: 60px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(194, 193, 193, 0.138); /* soft black shadow */
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .section-card h3 {
@@ -186,13 +205,11 @@ footer.h6{
 }
 .section-card::before {
   content: "";
-
   display: block;
   position: absolute;
-
   background-size: contain;
   background-repeat: no-repeat;
-  right: 0;
+  right: -4;
   top: 0;
 }
 .textforcoloredboxes{
@@ -318,7 +335,7 @@ footer.h6{
 .service-labels {
   background-color: #fff; 
   color: #000; 
-  padding: 6px 16px; 
+  padding: 6px 27px; 
   border-radius: 999px; 
   font-size: 1rem;
   border: 2px solid #B6B6B6;
