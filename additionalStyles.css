@@ -1,4 +1,6 @@
-
+.body{
+  background-image: url('Images/circlesbg.png');
+}
 
 /* Button Gradient */
 .gradient-btn {
@@ -17,30 +19,68 @@
   position: relative;
   overflow-x: hidden;
   background: #fff;
+  padding-top: 100px; /* Increased padding for top spacing */
+  padding-bottom: 60px; /* Add bottom spacing similar to Figma */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.hero-img{
+
+
+/*
+.hero-wrapper .text-start {
   position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}*/
+
+.hero-wrapper h4 {
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0rem;
 }
+
+.hero-wrapper p {
+  font-size: 40px;
+  font-weight: 400;
+  /* margin-top: 20px; */
+  margin-bottom: 0;
+}
+
+
+.text-gradient {
+  background: linear-gradient(to right, #cc0099, #ff6699);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section */
+.hero-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  background: #fff;
+}
+
 .hero-img img {
   display: block;
   width: 100%;
-  height: auto;
+  height: auto;More actions
   margin: 0;
   padding: 0;
- 
 }
 
 h1 {
-  margin-bottom: 0.5rem; /* or 0 */
+  margin-bottom: 0.5rem; 
 }
 
 p {
-  margin-bottom: 0; /* removes space below the paragraph */
+  margin-bottom: 0;
 }
-
-/* Optional: tighter spacing for section titles */
 h3 {
-
   margin-bottom: 1rem;
   font-size: 30px;
 }
@@ -155,7 +195,10 @@ footer.h6{
   right: 0;
   top: 0;
 }
-
+.textforcoloredboxes{
+  font-weight: 400; 
+  color:#545454 ;
+}
 /* Specific background images for each card */
 .purple::before {
   content: "";
@@ -166,10 +209,14 @@ footer.h6{
 
 .orange::before {
   background-image: url('Images/section2.png');
+  height: 542px;
+  width: 576px;
 }
 
 .red::before {
   background-image: url('Images/section3.png');
+  height: 525px;
+  width: 436px;
 }
 
 /* Responsive */
@@ -268,6 +315,20 @@ footer.h6{
   margin-bottom: 25px;
 }
 
+.service-labels {
+  background-color: #fff; 
+  color: #000; 
+  padding: 6px 16px; 
+  border-radius: 999px; 
+  font-size: 1rem;
+  border: 2px solid #B6B6B6;
+}
+
+.caringpartners {
+  font-weight: 600; 
+  font-size: 1.75rem; 
+  color: #000;
+}
 
 .store-buttons img {
   height: 55px;
@@ -326,3 +387,4 @@ h2{
   background-color: #ff5ca2;
   border-radius: 2px;
 }
+
