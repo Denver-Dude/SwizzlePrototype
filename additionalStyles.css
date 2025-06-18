@@ -5,6 +5,16 @@
   background-position: top;    /* Keeps the circles centered */
 }
  
+.fw-medium{
+  font-size: 90px; 
+  font-weight: 500; 
+  line-height: 1.2!important;     
+  margin-bottom: 0rem !important;
+
+}
+  .hero-wrapper p {
+    font-size: 40px !important;
+  }
 
 /* Button Gradient */
 .gradient-btn {
@@ -34,10 +44,11 @@
   position: absolute;
   right: 0;
   bottom: -70px;
-  width: 587px;
+  width: 731px;
   height: 539px;
   background: url('Images/header bg.png') no-repeat center top;
   background-size: cover;
+  z-index: -2;
 
 }
 
@@ -103,7 +114,7 @@ footer.h6{
   font-weight:600 !important;
   font-size: 35px !important;
 }
-.maxine-sections {
+.web-phoneimgs {
   padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
@@ -117,6 +128,7 @@ footer.h6{
   padding: 40px;
   position: relative;
   overflow: hidden;
+  background-size: contain !important;
 }
 
 .icon-circle {
@@ -215,6 +227,7 @@ footer.h6{
 .textforcoloredboxes{
   font-weight: 400; 
   color:#545454 ;
+  font-size: 19px;
 }
 /* Specific background images for each card */
 .purple::before {
@@ -236,22 +249,14 @@ footer.h6{
   width: 436px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .section-card {
-    flex-direction: column;
-    text-align: left;
-  }
 
-  .icon-circle {
-    margin-bottom: 10px;
-  }
-}
+
+
 /* Container setup */
-.maxine-section {
+.web-phoneimg {
   position: relative;
   width: 100%;
-  padding: 4rem 2rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,7 +278,7 @@ footer.h6{
 }
 
 /* Cards container */
-.maxine-content {
+.web-phone-content {
   position: relative;
   display: flex;
   gap: 2rem;
@@ -341,6 +346,16 @@ footer.h6{
   border: 2px solid #B6B6B6;
 }
 
+.caringpartnersTitle{
+  font-weight: 600; 
+  margin-bottom: 20px; 
+  font-size: 38px
+}
+.caringpartnersdesc{
+  font-size: 27px !important; 
+  margin-right:50px
+}
+
 .caringpartners {
   font-weight: 600; 
   font-size: 1.75rem; 
@@ -405,3 +420,153 @@ h2{
   border-radius: 2px;
 }
 
+
+/* Responsive */
+
+@media (max-width: 767.98px) {
+  .line-break {
+    display: none;
+  }
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px){
+  .hero-wrapper h4 {
+    font-size: 72px !important;
+  }
+  .hero-img {
+        height: 219px !important;
+    }
+  .hero-img img {
+    max-width: 133% !important;
+    height: 260px !important;
+  }
+  .hero-img::before{
+    background-size: contain;
+    bottom: -326px !important;
+    width: 386px !important;
+    height: 539px !important;
+
+  }
+  .hero-wrapper p {
+    font-size: 25px !important;
+  }
+    .orange::before {
+    background-image: url(Images/section2.png);
+    height: 460px;
+    width: 823px;
+}
+.red::before {
+    background-image: url(Images/section3.png);
+    height: 696px;
+    width: 561px;
+}
+    
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+  .caringpartnersTitle{
+    font-size: 27px;
+  }
+  .caringpartnersdesc{
+    font-size:19px !important;
+
+  }
+  .hero-img img{
+    max-width: 179%;
+    height: 369px;
+
+  }
+  .hero-img{
+    bottom: 37px;
+    width: 575px;
+    height: 454px;
+  }
+
+}
+/*X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+  .hero-wrapper h4 {
+    font-size: 100px;
+  }
+  .hero-img{
+    height: 482px;
+  }
+  .textforcoloredboxestitle{
+    font-size: 42px;
+    margin-top: 10px;
+
+    font-size: 23px;
+  }
+  .section-card h3{
+    font-size: 52px ;
+  }
+  .textforcoloredboxes{
+  font-size: 25px;
+  }
+  .fs-5{
+    font-size: 25px;
+  }
+ }
+
+
+ /*Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .hero-img img {
+      max-width: 92% !important;
+      height: 200px !important;
+  }
+  .hero-img::before {
+    background-size: contain;
+    bottom: -329px !important;
+    width: 315px !important;
+    height: 539px !important;
+  }
+.hero-wrapper h4 {
+  font-size: 84px !important;
+}
+
+  .section-card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .icon-circle {
+    margin-bottom: 10px;
+  }
+  .hero-img::before{
+    width: 435px;
+    height: 306px;
+  }
+  .purple::before {
+    width: 518px;
+}
+.caringpartnersTitle {
+  font-size: 27px;
+   text-align: center;
+}
+.caringpartnersdesc {
+  font-size: 19px !important;
+  text-align: center;
+}
+.caringpartners {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #000;
+}
+    .purple::before {
+        width: 407px;
+    }
+    .orange::before {
+        background-image: url(Images/section2.png);
+        height: 606px;
+        width: 1100px;
+    }
+
+.red::before {
+        background-image: url(Images/section3.png);
+        height: 898px;
+        width: 706px;
+    }
