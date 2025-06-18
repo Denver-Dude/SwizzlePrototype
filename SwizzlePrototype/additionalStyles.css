@@ -1,0 +1,578 @@
+.background-circle {
+  background-image: url("Images/circlesbg.png");
+  background-repeat: no-repeat;
+  background-size: contain;         /* Or 'contain' depending on your design */
+  background-position: top;    /* Keeps the circles centered */
+}
+ 
+.fw-medium{
+  font-size: 90px; 
+  font-weight: 500; 
+  line-height: 1.2!important;     
+  margin-bottom: 0rem !important;
+
+}
+  .hero-wrapper p {
+    font-size: 40px !important;
+  }
+
+/* Button Gradient */
+.gradient-btn {
+  background: linear-gradient(135deg, #e43fa1, #8364e8);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #d33091, #6f4be0);
+  box-shadow: 0 4px 12px rgba(227, 63, 161, 0.3);
+}
+
+/* Hero Section */
+.hero-wrapper {
+  position: relative;
+
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  width: 731px;
+  height: 539px;
+  background: url('Images/header bg.png') no-repeat center top;
+  background-size: cover;
+  z-index: -2;
+
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+.hero-wrapper h4 {
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0rem;
+}
+
+.hero-wrapper p {
+  font-size: 40px;
+  font-weight: 400;
+  z-index: 2;
+  /* margin-top: 20px; */
+  margin-bottom: 0;
+}
+
+
+.text-gradient {
+  background: linear-gradient(to right, #cc0099, #ff6699);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section */
+.hero-wrapper {
+  position: relative;
+
+}
+
+
+h1 {
+  margin-bottom: 0.5rem; 
+}
+
+p {
+  margin-bottom: 0;
+}
+h3 {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+caringpartnerdescription.h6{
+  font-family: "Manrope", sans-serif;
+  font-weight:600 !important;
+  font-size: 35px !important;
+
+}
+
+footer.h6{
+  font-family: "Manrope", sans-serif;
+  font-weight:600 !important;
+  font-size: 35px !important;
+}
+.web-phoneimgs {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-card {
+  background: #eee;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  background-size: contain !important;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  position: relative;
+}
+.icon-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px; /* 20px larger than the icon */
+  height: 60px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(194, 193, 193, 0.138); /* soft black shadow */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.section-card h3 {
+  margin: 0 0 15px;
+}
+
+.section-card p {
+  margin: 0;
+  line-height: 1.7;
+  /*max-width: 900px;*/
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Gradient backgrounds + matching icon color */
+.purple {
+  background: #F7F1FF;
+}
+
+.purple .icon-circle {
+  background: #c085ff;
+  color: #fff;
+}
+
+.orange {
+  background: #FFF5EE;
+}
+
+.orange .icon-circle {
+  background: #f5b35c;
+  color: #fff;
+}
+
+.red {
+  background: #FFF1F1
+}
+
+.red .icon-circle {
+  background: #fa697c;
+  color: #fff;
+}
+.card-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-card .text {
+  position: relative;
+  z-index: 1;
+}
+.section-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -4;
+  top: 0;
+}
+.textforcoloredboxes{
+  font-weight: 400; 
+  color:#545454 ;
+  font-size: 19px;
+}
+/* Specific background images for each card */
+.purple::before {
+  content: "";
+  background-image: url('Images/section1.png'); /* update with your actual path */
+  height: 393px;
+  width: 401px;
+}
+
+.orange::before {
+  background-image: url('Images/section2.png');
+  height: 542px;
+  width: 576px;
+}
+
+.red::before {
+  background-image: url('Images/section3.png');
+  height: 525px;
+  width: 436px;
+}
+
+
+
+
+/* Container setup */
+.web-phoneimg {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Background image styling */
+.background-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Cards container */
+.web-phone-content {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual cards */
+.maxine-card img {
+  width: 100%;
+  max-width: 630px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.download-section {
+  width: 100%;
+  padding: 60px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 400px;
+}
+
+
+.download-container {
+  display: flex;
+  justify-content: flex-start; /* or center if needed */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.download-text {/*
+  flex: 1 1 500px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 10px;*/
+}
+
+.download-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.download-text p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.service-labels {
+  background-color: #fff; 
+  color: #000; 
+  padding: 6px 27px; 
+  border-radius: 999px; 
+  font-size: 1rem;
+  border: 2px solid #B6B6B6;
+}
+
+.caringpartnersTitle{
+  font-weight: 600; 
+  margin-bottom: 20px; 
+  font-size: 38px
+}
+.caringpartnersdesc{
+  font-size: 27px !important; 
+  margin-right:50px
+}
+
+.caringpartners {
+  font-weight: 600; 
+  font-size: 1.75rem; 
+  color: #000;
+}
+
+.store-buttons img {
+  height: 55px;
+  margin-right: 15px;
+}
+
+h2{
+  color: white;
+}
+
+.partner-section {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background-color: #fff;
+}
+
+.partner-content h2 {
+  font-size: 3rem; /* Larger heading */
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.partner-content p {
+  font-size: 1.3rem; /* Larger paragraph */
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #000; /* Black button */
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact-button span {
+  margin-left: 10px;
+}
+
+.contact-button:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+}
+
+.underline {
+  margin: 40px auto 0;
+  width: 1200px; /* Increased from 120px to 200px */
+  height: 4px;
+  background-color: #ff5ca2;
+  border-radius: 2px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 767.98px) {
+  .line-break {
+    display: none;
+  }
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px){
+  .hero-wrapper h4 {
+    font-size: 72px !important;
+  }
+  .hero-img {
+        height: 219px !important;
+    }
+  .hero-img img {
+    max-width: 133% !important;
+    height: 260px !important;
+  }
+  .hero-img::before{
+    background-size: contain;
+    bottom: -326px !important;
+    width: 386px !important;
+    height: 539px !important;
+
+  }
+  .hero-wrapper p {
+    font-size: 25px !important;
+  }
+    .orange::before {
+    background-image: url(Images/section2.png);
+    height: 460px;
+    width: 823px;
+}
+.red::before {
+    background-image: url(Images/section3.png);
+    height: 696px;
+    width: 561px;
+}
+    
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+  .caringpartnersTitle{
+    font-size: 27px;
+  }
+  .caringpartnersdesc{
+    font-size:19px !important;
+
+  }
+  .hero-img img{
+    max-width: 179%;
+    height: 369px;
+  }
+  .hero-img {
+      height: 414px;
+  }
+  .hero-img{
+    bottom: 37px;
+    width: 575px;
+    height: 454px;
+  }
+
+}
+/*X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+
+  .hero-wrapper h4 {
+    font-size: 100px;
+  }
+  .hero-img{
+    height: 482px;
+  }
+  .textforcoloredboxestitle{
+    font-size: 42px;
+    margin-top: 10px;
+
+    font-size: 23px;
+  }
+  .section-card h3{
+    font-size: 52px ;
+  }
+  .fs-5{
+    font-size: 25px;
+  }
+ }
+
+
+ /*Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .hero-img {
+    height: 162px !important;
+  }
+  .hero-img img {
+      max-width: 92% !important;
+      height: 200px !important;
+  }
+
+  .labels-for-service{
+  justify-content: flex-start;
+  }
+  .hero-img::before {
+    background-size: contain;
+    bottom: -329px !important;
+    width: 315px !important;
+    height: 539px !important;
+  }
+.hero-wrapper h4 {
+  font-size: 84px !important;
+}
+
+  .section-card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .icon-circle {
+    margin-bottom: 10px;
+  }
+  .hero-img::before{
+    width: 435px;
+    height: 306px;
+  }
+  .purple::before {
+    width: 518px;
+}
+.caringpartnersTitle {
+  font-size: 27px;
+   text-align: center;
+}
+.caringpartnersdesc {
+  font-size: 19px !important;
+  text-align: center;
+}
+.caringpartners {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #000;
+}
+    .purple::before {
+        width: 407px;
+    }
+    .orange::before {
+        background-image: url(Images/section2.png);
+        height: 606px;
+        width: 1100px;
+    }
+
+.red::before {
+        background-image: url(Images/section3.png);
+        height: 898px;
+        width: 706px;
+    }

@@ -281,7 +281,6 @@ footer.h6{
 .web-phone-content {
   position: relative;
   display: flex;
-  gap: 2rem;
   z-index: 1;
   flex-wrap: wrap;
   justify-content: center;
@@ -477,7 +476,9 @@ h2{
   .hero-img img{
     max-width: 179%;
     height: 369px;
-
+  }
+  .hero-img {
+      height: 414px;
   }
   .hero-img{
     bottom: 37px;
@@ -488,6 +489,7 @@ h2{
 }
 /*X-Large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) { 
+
   .hero-wrapper h4 {
     font-size: 100px;
   }
@@ -503,9 +505,6 @@ h2{
   .section-card h3{
     font-size: 52px ;
   }
-  .textforcoloredboxes{
-  font-size: 25px;
-  }
   .fs-5{
     font-size: 25px;
   }
@@ -514,9 +513,16 @@ h2{
 
  /*Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+  .hero-img {
+    height: 162px !important;
+  }
   .hero-img img {
       max-width: 92% !important;
       height: 200px !important;
+  }
+
+  .labels-for-service{
+  justify-content: flex-start;
   }
   .hero-img::before {
     background-size: contain;
